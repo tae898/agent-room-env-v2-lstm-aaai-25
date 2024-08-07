@@ -9,8 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import torch
 import torch.nn.functional as F
-from memory.utils import (argmax, is_running_notebook, list_duplicates_of,
-                           write_yaml)
+from memory.utils import argmax, is_running_notebook, list_duplicates_of, write_yaml
 from IPython.display import clear_output
 from tqdm.auto import tqdm
 
@@ -21,7 +20,6 @@ class ReplayBuffer:
     """A simple numpy replay buffer.
 
     numpy replay buffer is faster than deque or list.
-    copied from https://github.com/Curt-Park/rainbow-is-all-you-need
 
     """
 

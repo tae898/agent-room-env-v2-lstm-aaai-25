@@ -14,10 +14,17 @@ from memory.utils import is_running_notebook, write_yaml
 from rooms_env.envs.rooms import RoomsEnv
 from torch import nn
 
-from .utils import (ReplayBuffer, plot_results, save_final_results,
-                    save_states_q_values_actions, save_validation,
-                    select_action, target_hard_update, update_epsilon,
-                    update_model)
+from .utils import (
+    ReplayBuffer,
+    plot_results,
+    save_final_results,
+    save_states_q_values_actions,
+    save_validation,
+    select_action,
+    target_hard_update,
+    update_epsilon,
+    update_model,
+)
 
 
 class LSTM(torch.nn.Module):
@@ -352,10 +359,7 @@ class History:
 
 
 class DQNLSTMMLPBaselineAgent:
-    """DQN LSTM Baseline Agent interacting with environment.
-
-    Based on https://github.com/Curt-Park/rainbow-is-all-you-need/
-    """
+    """DQN LSTM Baseline Agent interacting with environment."""
 
     def __init__(
         self,

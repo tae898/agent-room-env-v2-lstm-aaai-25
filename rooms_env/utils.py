@@ -186,7 +186,6 @@ def get_duplicate_dicts(search: dict, target: list) -> list:
 
 
 def list_duplicates_of(seq, item) -> list:
-    # https://stackoverflow.com/questions/5419204/index-of-duplicates-items-in-a-python-list
     start_at = -1
     locs = []
     while True:
